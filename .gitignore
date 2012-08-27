@@ -1,0 +1,21 @@
+# General
+*.7z
+*.backup
+*.tex~
+*.bib~
+*.aux
+*.log
+*.blg
+*.bbl
+*.out
+*.txt
+*.sh
+
+# Programming
+*.o
+*.class
+*.jar
+*.pyc
+
+.DS_Store*
+
