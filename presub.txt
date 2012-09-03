@@ -1,0 +1,34 @@
+Dear Editors,
+
+I would like to submit, on behalf of my co-authors, a proposal for an opinion
+(?) entitled “Public preprints in ecology and evolution” for consideration in X.
+
+    Public preprint servers such as arXiv.org allow researchers to make public
+their research while it is undergoing peer-review. These servers are
+increasingly seen as an important component of open science: the manuscripts can
+be discussed by the scientific community as soon as they are finished instead of
+being hidden until officially published. The quantitative biology section of
+arXiv is growing faster than any other section, yet there is still much to do
+to promote this practice in ecology and evolution. In this opinion piece, we
+will make the argument for public preprints servers and discuss their current
+status in
+ecology and evolution. The article will be structured as follows:
+
+1. The case for public preprints. In this first section, we make the case for
+submitting preprints to public servers. We argue that this practice is
+beneficial to both scientists and publishers and emphasize how it can be part of
+a vigorous peer-review process.
+
+2. Preprints, ecology and evolution. We discuss the current state of preprints in
+ecology & evolution and the policies of the main publishers.
+ 
+3. The current offer. Finally, we discuss the main options to submit preprints.
+We briefly review arXiv, figshare, and the upcoming PeerJ and F1000Research.
+
+    We look forward to your decision.
+
+Best regards,
+
+Philippe Desjardins-Proulx
+Theoretical Ecosystem Ecology laboratory, Université du Québec, Canada.
+
