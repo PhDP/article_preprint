@@ -8,7 +8,6 @@
 *.blg
 *.bbl
 *.out
-*.txt
 *.sh
 
 # Programming
