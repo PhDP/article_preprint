@@ -19,6 +19,9 @@
 \author{Ethan P. White}
 \affiliation{Departement of Bology, Utah State University, United-States of America.}
 
+\author{Joel J. Adamson}
+\affiliation{Ecology, Evolution and Organismic Biology, University of North Carolina at Chapel Hill}
+
 \author{Timoth\'ee Poisot}
 \affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
 \affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
@@ -66,28 +69,30 @@ community. ...
 
 %% Allows papers to be cited earlier (greater immediacy)
 
-% Tim's section:
-The review process as a whole is critically over-loaded, because the number of
-active scientists increases, because the pressure to publish increases, and
-because of an effect dubbed ``the tragedy of the reviewers commons'' REF.  In
-the same times, rejection rates are high in most journals (REF), and when the
-not invited to submit a revisions, authors are left with the impression that
-they must start the whole process all over again. It's thus no surprise that
-different initiatives emerged over the last few years, to decrease the time
-spent in review. XXX et coll. (REF) called for the recycling and reuse of
-peer-reviews: by attaching previous reviews, and detailed replies, to a new
-submission, both the editor and the referees can gauge the work done on the
-manuscript, and perhaps evaluate it with less prejudice. In a similar way, the
-\emph{Peerage of Science} initiative allows authors to seek anonymous pre-
-review by their peers. Some journals (LIST?) now accept to publish papers
-which received good evaluations, effectively outsourcing the review process. A
-widespread use of preprint servers can achieve the same goal of reducing the
-time spent in review. By putting a manuscript out there for open comments and
-criticisms, the authors will receive valuable feedback, and can improve the
-version which will be submitted. With a rich enough community of scientists
-depositing preprints, and commenting on them, the process of an open pre-
-review can become widespread, and will overall increase the quality of first
-submissions.
+The review process as a whole is critically over-loaded, because the
+number of active scientists increases, because the pressure to publish
+increases, and because of an effect dubbed ``the tragedy of the
+reviewers commons'' REF.  At the same time, rejection rates are high
+in most journals (REF), and when not invited to submit revisions,
+authors are left with the impression that they must start the whole
+process all over again. It's thus no surprise that different
+initiatives emerged over the last few years to decrease the time spent
+in review. XXX et coll. (REF) called for the recycling and reuse of
+peer-reviews: by attaching previous reviews, and detailed replies, to
+a new submission, both the editor and the referees can gauge the work
+done on the manuscript, and perhaps evaluate it with less
+prejudice. In a similar way, the \emph{Peerage of Science} initiative
+allows authors to seek anonymous pre- review by their peers. Some
+journals (LIST?) now accept papers for publication that received good
+evaluations, effectively outsourcing the review process. A widespread
+use of preprint servers can achieve the same goal of reducing the time
+spent in review. By putting a manuscript out there for open comments
+and criticisms, the authors will receive valuable feedback, and can
+improve the version which will be submitted. With a rich enough
+community of scientists depositing preprints, and commenting on them,
+the process of an open pre- review can become widespread, and will
+overall increase the quality of first submissions.
+% Assuming that the quality of the paper is a good prior of its acceptance probability :-)
 
 \begin{figure}[ht!] \centering\includegraphics[width=0.50\textwidth]{map.pdf}
 \caption { It can take several months, and even a few years, before a submitted
@@ -101,26 +106,38 @@ integrate research even before publication, greatly improving immediacy.  }
 \label{fig:map}
 \end{figure}
 
-% @to myself: rewrite this paragraph:
+Preprint servers also establish priority in a fair way.  Some
+manuscripts will spend much more time in the review process than
+others.  Public preprint servers offer a much fairer way to establish
+intellectual priority by making the work available when done, even if
+the exact organisation of the manuscript may change. Surprisingly,
+there is a perception in biology that public preprints make it easier
+to steal ideas, as if scientific ideas only took form in published
+material.
+% TP This needs more development, I'm not sure I get your point
+Mathematicians and physicists have embraced arXiv in part to establish
+priority in a fair way\cite{cal12}.
+
 Some of the responses to public preprints are surprising since they are,
 essentially, the same as exchanging preprints among colleagues.
-% TP Well, no. You trust your colleagues, and you trust that they will not give your
-%    MS to anyone!
-Prepublication reviews by a small network of colleagues is an important part
-of the scientific process, which is attested by the fact that nearly all
-published papers acknowledge comments by people not listed as co-authors.
-Preprints servers simply offer a way to extend this network of colleagues to
-the entire scientific community. It ensures that science is not constrained by
-small networks of scientists exchanging ideas. Ginsparg made arXiv.org in part
-for democratic reasons: he wanted everyone from graduate students in small
-universities to Princeton professors to have access to the most recent
-scientific \emph{ideas}.
+% TP Well, no. You trust your colleagues, and you trust that they will
+% not give your MS to anyone!
+Prepublication reviews by a small network of colleagues is an
+important part of the scientific process, which is attested by the
+fact that nearly all published papers acknowledge comments by people
+not listed as co-authors.  Preprint servers simply offer a way to
+extend this network of colleagues to the entire scientific
+community. It ensures that science is not constrained by small
+networks of scientists exchanging ideas.  Paul Ginsparg created
+arXiv.org in part for democratic reasons: he wanted everyone from
+students in small universities to Ivy-League professors to have access
+to the most recent scientific \emph{ideas}.
 % TP One important point to make: the MS and the idea are different things.
 %    We should focus more on the later...
-Ginsparg revolutionary idea was simply to use the power of the internet for
-preprints, not just for the end product, so the process can be open from A to
-Z, instead of being just open at the end of the process (and often not open at
-all).
+Ginsparg's revolutionary idea was simply to use the power of the
+internet for preprints, not just for the end product, so the process
+can be open from A to Z, instead of being just open at the end of the
+process.
 % TP Since when is the publishing buisness an open process? :-)
 % PhDP: Wishful thinking :) Corrected...
 
@@ -171,19 +188,107 @@ on the subject \ref{table:policies}.
     \label{table:policies}
 \end{table*}
 
-\section{Current offer}
+There are other ``cultural'' barriers to adoption of preprint servers
+by ecologists and evolutionary biologists.  The most notable preprint
+server, arXiv, is designed to work best with \TeX{}, a nearly
+universal document preparation system among physicists and
+mathematicians.  Jackson \cite{jackson2002preprints} further argues
+that \TeX{} introduced an ``open source mindset'' to its users, who
+now freely share their research findings as well as their software.
+Many biologists instead use proprietary software to prepare their
+research findings, and many ecology and evolution journals officially
+prefer Microsoft Word documents as submissions.  The recent
+discipline-wide adoption of free software packages such as R, as well
+as interest in open access publishing, has coincided with recent use
+of preprint servers by biologists, supporting Jackson's claims.
+
+Physicists and other quantitative scientists have recently developed a
+great interest in evolutionary theory, quantitative ecological theory
+and epidemiological modeling.  Unfortunately this has led to a lot of
+repeated work (``reinventing the wheel''; \cite{de2011contribution})
+that could be avoided by better communication across disciplines.  The
+near-universal adoption of preprint servers in physics provides this
+vital communication channel.  We suggest that biologists reach out to
+physicists and mathematicians by posting papers to arXiv: a physicist
+who does not read \emph{Evolution} certainly checks arXiv at least
+weekly.  This benefits both disciplines, as biologists will reach new
+readers, and physicists will learn the terminology, tools and ideas
+common in existing evolutionary theory.  A recent series of papers on
+the theory of natural selection was posted to arXiv simultaneously
+with its publication in the \emph{Journal of Evolutionary Biology}
+\cite{JEB:JEB2431,JEB:JEB2498,JEB:JEB2378,JEB:JEB2373}.
+
+\section{Current offerings}
 
 We briefly discuss the main options to submit preprints to open servers:
 arXiv.org, Figshare, and the upcoming PeerJ and F1000Research.
 
 \subsection{arXiv}
 
-arXiv (\href{http://arxiv.org/}{http://arxiv.org/}).
-arXiv is funded by a network of universities.
-
-...
-
 % @Joel
+% Rough outline:
+% 1. Description of arXiv (origins, funding, maintenance)
+% 2. Submission process
+% 3. Role within math and physics community (nearly universal), including recent changes
+% 4. Nature of citations and "priority"
+%
+% My biggest problem here is how to cite my sources: the information
+% on funding comes from a press release from Cornell University
+% Libraries; other basic "raw data" comes straight from the arXiv
+% webpages. How do I cite that?
+
+arXiv (\url{http://arxiv.org/}) is the most widely-used preprint
+server today, and its use is almost universal in mathematics and most
+branches of physics.  Physicist Paul Ginsparg originated arXiv in 1991
+for theoretical high-energy physicists to communicate preprints via
+email and ftp, and soon thereafter adopted the newly created
+world-wide web\cite{jackson2002preprints}.  arXiv now receives over
+7,000 submissions per month
+(\url{http://arxiv.org/show_monthly_submissions}).  arXiv divides its
+submissions into subcategories of physics, mathematics, computer
+science, quantitative biology, finance and statistics.  The
+quantitative biology category includes subcategories for Populations
+and Evolution, Quantitative Methods and other categories that may be
+of interest to ecologists and evolutionary biologists.
+% Check me on this @Pierre!  Not only is this vague, but I'm not sure
+% how to verify it; I want to give people the impression that a
+% "Quantitative ecology" or "General ecology" category could be
+% created easily
+The creation of new categories is regulated by the same system that
+categorizes papers.
+
+Submission to arXiv is fully automated via the world-wide web.
+Authors can submit \TeX{}/\LaTeX{} documents or directly in PDF or
+PostScript (for example, as exported by a word processor).  A
+moderation system was put in place in 2004: papers must be categorized
+by an ``endorser.''  At least one author of a paper must be an
+endorser that has previously submitted a paper or has received
+permission to submit to a particular category.  Many authors in
+mathematics and physics submit papers as soon as they are ready for
+review by colleagues, although another popular option is submitting
+simultaneously to a journal and arXiv.
+
+Most papers posted to arXiv are eventually printed in journals.  There
+are notable exceptions, including Perelman's landmark paper leading to
+the proof of the Poincar\'{e} conjecture \cite{2002math.....11159P}.
+arXiv provides a reliable citation system for all eprints (see our
+citation \cite{2002math.....11159P}), lending a form of ``intellectual
+priority'' to works posted there.  Despite these marks of arXiv 
+functioning as a scientific journal, arXiv has never sought to replace
+scientific journals and explicitly states that it serves a different
+function as ``an openly accessible, moderated repository for scholarly
+articles in specific scientific disciplines.''
+
+arXiv is now administered by the Cornell University Libraries.
+Funding comes from voluntary pledges by academic institutions along
+with matching funds from the Simons Foundation \cite{arxiv_future}.
+One-hundred twenty six of the top two-hundred institutions in terms of
+downloads have provided the operating budget for arXiv over the next
+five years.  This plan reduces the financial burden on Cornell
+University and transfers governance to a collaborative community in
+accordance with arXiv's key principles.  arXiv takes numerous measures
+to ensure that the repository will remain permanently available and
+submissions will be readable.
 
 \subsection{Figshare}
 
@@ -219,7 +324,6 @@ response.
 
 \section{Conclusion}
 
-% Poorly written:
 Responding to the rumour that they refused manuscripts submitted to arXiv,
 Nature responded that ``Nature never wishes to stand in the way of communication
 between researchers. We seek rather to add value for authors and the community
@@ -231,6 +335,15 @@ Haldane's Sieve (\href{http://haldanessieve.org/}{http://haldanessieve.org/}), a
 new blog discussing arXiv papers in population genetics, will help make arXiv
 attractive for scientists looking to promote their work. These initiatives are
 important to fully exploit the potential of open preprints servers.
+
+Posting preprints online increases the community of available informal
+peer reviewers, and uses the internet for its original
+community-building purposes.  Preprint servers also facilitate
+communication between disciplines, bridging cultural as well as
+geographic divides.
+% JA: perhaps something less advertising-like should go here:
+The advantages are clear and the costs are low.
+% BUY NOW!
 
 \newpage
 \bibliography{refs}
