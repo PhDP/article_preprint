@@ -9,6 +9,7 @@
 *.bbl
 *.out
 *.sh
+*.pdf
 
 # Programming
 *.o

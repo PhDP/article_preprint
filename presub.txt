@@ -1,43 +1,38 @@
 Dear Editors,
 
-I would like to submit, on behalf of my co-authors, a proposal for an opinion
-paper entitled “Public preprints in ecology and evolution” for consideration
-in X. The manuscript is authored by myself, Ethan White, Timothée Poisot, ...,
-and Dominique Gravel.
+I would like to submit, on behalf of my co-authors, a proposal for a "Community
+Pages" paper entitled “Developing a preprint culture in biology” for
+consideration in PLOS Biology. The manuscript is authored by myself, Ethan
+White, Joel J. Adamson, Timothée Poisot, Karthik Ram, and Dominique Gravel.
 
-// Here, you need to add a full disclosure, in case some of us are associated
-with one of the preprints solutions we discuss in the text. Is Dom a F1000
-member?
+Public preprint servers such as arXiv.org have become central to the scientific
+process in fields such as physics, mathematics, and economics. These preprint
+servers allow researchers to make their research rapidly available to the
+broader community prior to peer review, which facilitates discussion, review,
+and rapid communication of scientific results. Preprints are increasingly seen
+as an important component of open science, because the research can be discussed
+by the scientific community as soon as it is finished, instead of being
+effectively hidden until officially published.  However, in contrast to other
+disciplines, the field of biology has effectively no preprint culture, with the
+exception of small pockets of primarily highly quantitative research (e.g.,
+epidemiology).
 
-Public preprint servers such as arXiv.org allow researchers to make public
-their research while it is undergoing peer-review. These servers are
-increasingly seen as an important component of open science: the manuscripts
-can be discussed by the scientific community as soon as they are finished
-instead of being hidden until officially published. The quantitative biology
-section of arXiv is growing faster than any other section, yet there is still
-much to do to promote this practice in ecology and evolution.
+In our piece, we discuss the lack of adoption of preprint servers in the
+biological sciences, make the argument for the value a preprint culture in these
+disciplines, and discuss existing options for posting biologically focused
+preprints.
 
-// A lot of papers on epidemiology, this might be worth mentionning
+Preprints are actively being discussed in high profile places as part of a
+broader push towards a more open scientific process (e.g., [1-2]). In addition,
+new preprint options have become available within the last year for
+non-quantitative biological research. As such, now is the ideal time to present
+the case for the use of preprints in biology.
 
-In this opinion piece, we will make the argument for public preprints servers
-and discuss their current status in ecology and evolution. The article will be
-structured as follows:
-
-1. The case for public preprints. In this first section, we make the case for
-   submitting preprints to public servers. We argue that this practice is
-   beneficial to both scientists and publishers and emphasize how it can be
-   part of a vigorous peer-review process.
-
-2. Preprints, ecology and evolution. We discuss the current state of preprints
-   in ecology & evolution and the policies of the main publishers.
- 
-3. The current offer. Finally, we discuss the main options to submit
-   preprints. We briefly review arXiv, figshare, and the upcoming PeerJ and
-   F1000Research.
-
-// You need to say, in a few words, why the paper is suited to the journal,
-who we want to adress with it, and why it is timely. Even if most of the infos
-are already in the first paragraph, say it again.
+For the sake of full disclosure we should point out that several of the authors
+are involved as volunteers with some of the preprint (and preprint like) servers
+mentioned in the article (White at PeerJ, Gravel at Faculty of 1000, and
+Desjardins-Proulx is an endorser for arXiv). However there is no financial
+conflict of interest.
 
 We look forward to your decision.
 
@@ -46,4 +41,7 @@ On behalf of the authors,
 
 Philippe Desjardins-Proulx
 Theoretical Ecosystem Ecology laboratory, Université du Québec, Canada.
+
+[1] http://www.nature.com/nature/journal/v476/n7359/full/476145a.html
+[2] http://www.nature.com/news/geneticists-eye-the-potential-of-arxiv-1.11091
 

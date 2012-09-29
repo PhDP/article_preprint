@@ -28,10 +28,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="850"
+     inkscape:window-width="1280"
+     inkscape:window-height="1000"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <defs
      id="defs4">
@@ -1435,7 +1435,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="opacity:0.5;fill:#008200;fill-opacity:1;stroke:none"
-       d="m 416.38982,534.92972 287.45692,0 0,480.22218 -287.45692,0 z"
+       d="m 414,534.92972 287.45692,0 0,480.22218 -287.45692,0 z"
        id="rect7093-8-8"
        inkscape:connector-curvature="0" />
     <path
@@ -1468,7 +1468,7 @@
          y="731.78577">Peer-review</tspan></text>
     <path
        style="opacity:0.5;fill:#ff8200;fill-opacity:1;stroke:none"
-       d="m 430.33948,821.49618 254.48392,0 0,175.856 -254.48392,0 z"
+       d="m 430,821.49618 254.48392,0 0,175.856 -254.48392,0 z"
        id="rect7093-8"
        inkscape:connector-curvature="0" />
     <text
