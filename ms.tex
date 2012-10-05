@@ -204,7 +204,7 @@ of the National Cancer Institute from Oxford and The Lancer from Elsevier.}
 \section{Current offerings}
 
 We briefly discuss the main options to submit preprints to open servers:
-arXiv.org, Figshare, and the upcoming PeerJ and F1000Research.
+arXiv.org, figshare, and the upcoming PeerJ and F1000Research.
 
 \subsection{arXiv}
 
@@ -255,9 +255,9 @@ community in accordance with arXiv's key principles.  arXiv takes numerous
 measures to ensure that the repository will remain permanently available and
 submissions will be readable.
 
-\subsection{Figshare}
+\subsection{figshare}
 
-Figshare (\href{http://figshare.com/}{http://figshare.com/}) is an open server
+figshare (\href{http://figshare.com}{http://figshare.com}) is an open server
 that allows scientists to submit any research output: manuscript, figures,
 datasets, videos, theses, presentations, and so on. There are no rules to limit
 what constitutes a research output and, unlike arXiv, there is no endorser
@@ -300,24 +300,24 @@ journal, so preprints can be posted regardless of where they will eventually be
 submitted for publication.
 
 PeerJ uses the CC-BY-SA 3.0 license, which is similar to the CC-BY license used
-by Figshare but adds the \emph{Share-alike} (sa) restriction that derivate works
+by figshare but adds the \emph{Share-alike} (sa) restriction that derivate works
 need a license identical to the license that governs the original work.
 
 \subsection{F1000Research}
 
 F1000Research is not a public preprint server like the previous three servers.
-Whereas arXiv, Figshare, and PeerJ offer an option to submit a manuscript
-without having it reviewed, papers submitted to F1000Research will eventually
-be reviewed. Thus, F1000Research offers a hybrid model with publicly available
+Whereas arXiv, figshare, and PeerJ offer an option to submit a manuscript
+without having it reviewed, papers submitted to F1000Research will eventually be
+reviewed. Thus, F1000Research offers a hybrid model with publicly available
 manuscripts at time of submission and standard peer-reviews. Manuscripts are
-considered ``accepted'' and will only be indexed after two positive referee % What about corrections? There are exchanges between referees and the authors?
-response. F1000Research works closely with data providers to integrate raw
-data to the paper. For instance, upon submitting a paper, authors are asked to
-upload their data, which are then integrated in \emph{e.g.} FigShare widgets,
-the DOI of which are given in the paper when the data are first mentionned.
-The licensing of the data is similar to the one used by FigShare, meaning that
-the articles are free to access, and can be redistributed readily. By putting
-much effort in integrating data to the paper, F1000Research is working to make
+considered ``accepted'' and will only be indexed after two positive referee
+response. F1000Research works closely with data providers to integrate raw data
+to the paper. For instance, upon submitting a paper, authors are asked to upload
+their data, which are then integrated in \emph{e.g.} figshare widgets, the DOI
+of which are given in the paper when the data are first mentionned.  The
+licensing of the data is similar to the one used by figshare, meaning that the
+articles are free to access, and can be redistributed readily. By putting much
+effort in integrating data to the paper, F1000Research is working to make
 science more reproducible and open.
 
 \subsection{GitHub}
@@ -326,24 +326,84 @@ This manuscript was developed entirely as an open project on GitHub. GitHub is
 one of several hosting services for collaborative development using the Git
 version control system (VCS).  Git is a decentralized revision control system
 created by Linus Torvalds and is used primarily to develop software, including
-the Linux kernel. Git provides powerful features that allow numerous contributers to work asynchronously on the same project, often in parallel branches, all of which can be effortlessly merged and version controlled. Although created primarily for software development, git is ideal for academic research since it provides a way to version control and collaborate on every step of the manuscript development process, from data manipulation and analysis to writing and revision. For example, during the development of this manuscript, each author
-would clone the project (\emph{i.e.} make a personal copy), modify it, and then merge their changes into a master branch.This takes the preprint process to an entirely new level, where the entire writing process is open from the beginning.
-% I would avoid using the term forking since it is not a central piece of the section. It is one specific way of collaborating on a github repo when everyone does not have rights to it. People could just as easily work on a single branch, all with write access, either directly to the master branch or to individual branches that could be merged. So in other words, we should keep the language general so people don't get bogged down with trying to understand what a fork is.
-% also I changed one author clones, then submits pull request langauge a bit since the main point of using git is that we can all work simultaneously unlike svn.
-% I took out "These techniques are widely used in open source software development." because git can also be used for closed source software, offering the same advantages, where the repositories are private. Paid git accounts allow for private repos.
+the Linux kernel. Git provides powerful features that allow numerous
+contributers to work asynchronously on the same project, often in parallel
+branches, all of which can be effortlessly merged and version controlled.  While
+Git is created primarily for software development, where the use of version
+control systems is standard \cite{aru12}, it is ideal for academic research
+since it provides a way to collaborate on every step of the manuscript
+development process, from data manipulation and analysis to writing and
+revision. For example, during the development of this manuscript, each author
+would clone the project (\emph{i.e.} make a personal copy), modify it, and then
+merge their changes into a master branch. This takes the preprint process to an
+entirely new level, where the entire writing process is open from the beginning.
 
 \section{Conclusion}
 
-% I added the following three paragraphs to the conclusion, offering also a discussion on the on going explosion of different publication models. Take what you want and remove what you don't need.
-% I also had the feeling we might want to include a single paragraph, very short, calling that evaluations (academia, grant agencies etc...) looking at publication records or report of scientific activities start to view preprints as a significant and sound scientific contribution. One of the most important benefit is again the speed of the publication process. Most grants are for three years or less. It makes it hard to have a published paper within the limits of the grant. Preprints could however speed the process and show that contributions were made during the time of the grant. 
-The ongoing discussions on the publication process, peer-reviewing and alternative publication models are all symptoms of the current uneasiness of scientists with the ever growing obsession with bibliographic metrics such as the impact factor \cite{Fisher2012}. There is pressure on researchers, wether they are junior looking for an academic position or senior trying to secure funding for their team, to orient their publication strategy in order to maximize their number of publications and total citations. A well-known consequence is to submit manuscripts first to the most prestigious journals, and then resubmit to lower level journals as they are rejected. The numerous negative impacts of such behavior have been discussed in depth \cite{hoc09}. They all contribute somehow in a general slowing down of scientific progress. Research activities and the publication process are drifting away from their fundamental object, namely the diffusion of novel scientific discoveries. 
+% I added the following three paragraphs to the conclusion, offering also a
+% discussion on the on going explosion of different publication models. Take
+% what you want and remove what you don't need.  I also had the feeling we might
+% want to include a single paragraph, very short, calling that evaluations
+% (academia, grant agencies etc...) looking at publication records or report of
+% scientific activities start to view preprints as a significant and sound
+% scientific contribution. One of the most important benefit is again the speed
+% of the publication process. Most grants are for three years or less. It makes
+% it hard to have a published paper within the limits of the grant. Preprints
+% could however speed the process and show that contributions were made during
+% the time of the grant. 
+The ongoing discussions on the publication process, peer-reviewing and
+alternative publication models are all symptoms of the current uneasiness of
+scientists with the ever growing obsession with bibliographic metrics such as
+the impact factor \cite{Fisher2012}. There is pressure on researchers, wether
+they are junior looking for an academic position or senior trying to secure
+funding for their team, to orient their publication strategy in order to
+maximize their number of publications and total citations. A well-known
+consequence is to submit manuscripts first to the most prestigious journals, and
+then resubmit to lower level journals as they are rejected. The numerous
+negative impacts of such behavior have been discussed in depth \cite{hoc09}.
+They all contribute somehow in a general slowing down of scientific progress.
+Research activities and the publication process are drifting away from their
+fundamental object, namely the diffusion of novel scientific discoveries. 
 
-Developing a preprint culture in biology is not a final solution to the impact factor inflation, it might however reduce significantly its negative consequences. Preprints speed up publication, openly, with no judgement on pertinence and originality. Paradoxically, because peer-reviewing is conducted following this step in the process of a scientific communication, it might bring it closer to its fundamental objective. The role of peer-reviewing is to judge the scientific quality of a study, the match between its hypotheses, methods, results and conclusions. The peer review process is the first barrier against fraudulent or bad quality science, susceptible to impede scientific progress. It is however now dominated by subjective evaluations, where trendy contributions are promoted to increase the immediacy impact of the journal. Most journals have in their instructions for reviewers a section devoted to the evaluation of suitability for the journal, a task usually incumbent to editors. Preprints are by definition not evaluated, neither for their quality nor their pertinence. Technically, the difference between a preprint and a traditional publication should be that the latter as the approval stamp by pairs on its quality. The relevance of a study, its contribution to science, should only be judged post-publication by many more readers than the typical two-four anonymous reviewers. With a such a shift in the diffusion strategy, the role of traditional journals and their editors would be to showcase scientific discoveries for specialized readership. Such a process should improve even further their diffusion, not impede it. 
+Developing a preprint culture in biology is not a final solution to the impact
+factor inflation, it might however reduce significantly its negative
+consequences. Preprints speed up publication, openly, with no judgement on
+pertinence and originality. Paradoxically, because peer-reviewing is conducted
+following this step in the process of a scientific communication, it might bring
+it closer to its fundamental objective. The role of peer-reviewing is to judge
+the scientific quality of a study, the match between its hypotheses, methods,
+results and conclusions. The peer review process is the first barrier against
+fraudulent or bad quality science, susceptible to impede scientific progress. It
+is however now dominated by subjective evaluations, where trendy contributions
+are promoted to increase the immediacy impact of the journal. Most journals have
+in their instructions for reviewers a section devoted to the evaluation of
+suitability for the journal, a task usually incumbent to editors. Preprints are
+by definition not evaluated, neither for their quality nor their pertinence.
+Technically, the difference between a preprint and a traditional publication
+should be that the latter as the approval stamp by pairs on its quality. The
+relevance of a study, its contribution to science, should only be judged
+post-publication by many more readers than the typical two-four anonymous
+reviewers. With a such a shift in the diffusion strategy, the role of
+traditional journals and their editors would be to showcase scientific
+discoveries for specialized readership. Such a process should improve even
+further their diffusion, not impede it. 
 
-The current opening of the publication process we are currently witnessing with the arrival of new preprint systems and innovative publication models such as F1000, PLoS One, Nature Scientific Reports, might significantly bypass the inflation of bibliographic metrics. They not only promote scientific community by changing the focus of the peer-reviewing, they also favor the publication of results that might otherwise be rejected because of low interest, negative results, descriptive and quantitative studies and datasets. One of drawback of making publication easier is obviously the proliferation of studies of uneven quality. A tradeoff between the intensity of the peer-review filtering and the benefits to science has been hypothesized \cite{Aarssen2012}. With increasingly stringent peer reviewing, the quality of published papers and easiness of finding discoveries might increase, at the cost of censorship, increasing load on authors and reviewers and time for publication. Preprints are simply bypassing this model, for what we believe is the progress of science: they speed up the dissemination of scientific discoveries, impede censorship and put on reader's shoulders the responsibility to judge originality and pertinence.
-
-% Fisher, J, Ritchie, E.G., Hanspach, J. (2012). Academia's obsession with quantity. Trends in Ecology and Evolution, 27, 473-474.
-% Aarssen, L. (2012). Are peer-review filters optimal for the progress of science in ecology and evolution? Ideas in Ecology and Evolution, 5, 9–12.
+The current opening of the publication process we are currently witnessing with
+the arrival of new preprint systems and innovative publication models such as
+F1000, PLoS One, Nature Scientific Reports, might significantly bypass the
+inflation of bibliographic metrics. They not only promote scientific community
+by changing the focus of the peer-reviewing, they also favor the publication of
+results that might otherwise be rejected because of low interest, negative
+results, descriptive and quantitative studies and datasets. One of drawback of
+making publication easier is obviously the proliferation of studies of uneven
+quality. A tradeoff between the intensity of the peer-review filtering and the
+benefits to science has been hypothesized \cite{Aarssen2012}. With increasingly
+stringent peer reviewing, the quality of published papers and easiness of
+finding discoveries might increase, at the cost of censorship, increasing load
+on authors and reviewers and time for publication. Preprints are simply
+bypassing this model, for what we believe is the progress of science: they speed
+up the dissemination of scientific discoveries, impede censorship and put on
+reader's shoulders the responsibility to judge originality and pertinence.
 
 Open preprint servers offer a great opportunity for open science, especially if
 the community embraces the idea of discussing preprints. Initiatives like
@@ -354,7 +414,10 @@ important to fully exploit the potential of open preprints servers. Posting
 preprints online increases the community of available informal peer reviewers,
 and uses the internet for its original community-building purposes.
 
-% Aren't we bridging more than cultural and geographic? I mean, we are essentially cross pollinating ideas. e.g. It took a lot time for MCMC to become popular in ecology even though it was widely used in other disciplines a decade or two earlier.
+% Aren't we bridging more than cultural and geographic? I mean, we are
+% essentially cross pollinating ideas. e.g. It took a lot time for MCMC to
+% become popular in ecology even though it was widely used in other disciplines
+% a decade or two earlier.
 Preprint servers also facilitate communication between disciplines, bridging
 cultural as well as geographic divides. Examples include a recent series of
 papers on the theory of natural selection that was posted to arXiv
@@ -378,8 +441,8 @@ of Canada and by the Canada Research Chair program.
 
 \section{Acknowledgements}
 
-We thank Carl Boettiger for helpful comments on an earlier version of this
-manuscript.
+We thank Carl Boettiger and Mark Hahnel for helpful comments on an earlier
+version of this manuscript.
 
 \newpage
 \bibliography{refs}
