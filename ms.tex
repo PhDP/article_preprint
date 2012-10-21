@@ -2,11 +2,11 @@
 % Version 1.0 January 2009
 %
 % To compile to pdf, run:
-% latex ms.tex
-% bibtex plos.template
-% latex plos.template
-% latex plos.template
-% dvipdf plos.template
+% latex ms
+% bibtex ms
+% latex ms
+% latex ms
+% dvipdf ms
 
 \documentclass[10pt]{article}
 
@@ -153,11 +153,7 @@ publication record when applying for a scholarship or a position. Increasing the
 perceived value of pre-prints as close, or equal, to journal articles will allow
 young researchers to put their research outcome in the open, and build a
 reputation for themselves through the diffusion of their work without fear that
-this work will not be recognized by grant or job committees. In this
-perspective, mixed publication systems like F1000Research should
-be encouraged as they combine the best of both worlds: contributions are
-initially considered preprints, but acquire full article status after positive
-reviews are received.
+this work will not be recognized by grant or job committees.
 
 Posting manuscripts as preprints also has the potential to result in higher
 quality science by allowing prepublication feedback from a large pool of
@@ -202,33 +198,27 @@ total research produced in biology.
 There are a number of reasons why biologists did not develop the reflex of
 sharing preprints, many of which are based on common misconceptions. For
 example, in contrast to other fields there is a perception in biology that
-public preprints make it easier to steal ideas \cite{gin11}. However, there is
-no evidence of this happening in the numerous other fields that have adopted
-preprint servers, and since preprint servers create a clear record of who had
-the idea first, and when, this appears to be a largely unfounded concern. In
-other fields preprints serve the opposite role, they allow straightforward
-establishment of precedence, letting research lay claim to an idea thus
-preventing it from being ``stolen'' \cite{gin11}
+public preprints make it easier to steal ideas \cite{gin11}. In other fields
+preprints serve the opposite role, they allow straightforward establishment of
+precedence, letting research lay claim to an idea thus preventing it from being
+``stolen'' \cite{gin11}
 
 Another major concern is based on a certain interpretation of the Ingelfinger
 rule: scientists should not publish the same manuscript twice \cite{alt96}. A
 preprint is simply a document that allows ideas to spread and be discussed, it
-is not yet formally validated by the peer-review system. This is why the
-majority of publishers do not see arXiv and similar services as a violation of
-the Ingelfinger rule. Almost all of the major publishers in biology are
-preprint-friendly, including: Nature Publishing Group, PLOS, BMC, PNAS,
-Elsevier, and Springer \ref{table:policies}. This year, both the Ecological
-Society of America and the Genetics Society of America changed their policies to
-allow public preprints. \emph{Nature} even felt compelled to respond to the
-rumour that they refused manuscripts submitted to arXiv by saying that
-``\emph{Nature} never wishes to stand in the way of communication between
-researchers. We seek rather to add value for authors and the community at large
-in our peer review, selection and editing'' \cite{nat05}.  Still, a few journals
-adopt a ``by default'' hostile attitude towards preprints, mostly due to the
-lack of clear policy of the publishers, or perhaps because a preprint culture
-has not developed in biology and the practice is still considered unusual. As an
-example, Wiley-Blackwell, which publishes some of the leading journals in
-biology, has no official policy on the matter.
+is not yet formally validated by the peer-review system. This is why almost all
+the major publishers in biology are preprint-friendly, including: Nature
+Publishing Group, PLOS, BMC, PNAS, Elsevier, and Springer \ref{table:policies}.
+This year, both the Ecological Society of America and the Genetics Society of
+America changed their policies to allow public preprints. \emph{Nature} even
+felt compelled to respond to the rumour that they refused manuscripts submitted
+to arXiv by saying that ``\emph{Nature} never wishes to stand in the way of
+communication between researchers. We seek rather to add value for authors and
+the community at large in our peer review, selection and editing'' \cite{nat05}.
+Still, a few journals adopt a ``by default'' hostile attitude towards preprints,
+mostly due to the lack of clear policy of the publishers. As an example,
+Wiley-Blackwell, which publishes some of the leading journals in biology, has no
+official policy on the matter.
 
 \section*{Current offerings}
 
@@ -271,26 +261,25 @@ any journal article, thus offering a permanent and stable link to the content.
 A flexible tag system is used to classify each item. Comments can be made on all
 content allowing for centralized discussion related to the material.
 
-One of the advantages of figshare over arXiv for biologists is that is it not
-limited to quantitative sciences. arXiv.org has sections on quantitative biology
-but might not be appropriate for non-quantitative work. With its flexible
-approach to preprints, figshare offers an alternative to arXiv for empirical
-biologists. Furthermore, by allowing all types of content, figshare also
-provides an archive for early results (\emph{e.g.}: figures, lab presentations).
+Unlike arXiv, figshare is not limited to quantitative sciences. arXiv.org has
+sections on quantitative biology but might not be appropriate for
+non-quantitative work. With its flexible approach to preprints, figshare offers
+an alternative to arXiv for empirical biologists. Furthermore, by allowing all
+types of content, figshare also provides an archive for early results
+(\emph{e.g.}: figures, lab presentations).
 
 \subsection*{PeerJ}
 
 PeerJ (\href{https://peerj.com/}{https://peerj.com/}) is a new open access
 publisher that combines both a preprint server and a peer reviewed journal.  It
 is focused on the biological and medical sciences, which may help overcome the
-perception that preprints do not have a place in biology. Like figshare this is
-an advantage relative to arXiv for biologists doing non-quantitative work.  Also
-like figshare, PeerJ allows commenting on posted preprints, improving the
-potential for pre-publication dialog. In addition, preprints can be made private
-if the authors choose, and shared only with selected colleagues. While this
-reduces many of the benefits of preprints described above, it may allow some
-researchers who would not otherwise post preprints to begin exploring the
-possibility in a manner appropriate to their current circumstances.
+perception that preprints do not have a place in biology. Like figshare, PeerJ
+allows commenting on posted preprints, improving the potential for
+pre-publication dialog. In addition, preprints can be made private if the
+authors choose, and shared only with selected colleagues. While this reduces
+many of the benefits of preprints described above, it may allow some researchers
+who would not otherwise post preprints to begin exploring the possibility in a
+manner appropriate to their current circumstances.
 
 In contrast to other preprint servers, users cannot post unlimited public
 preprints for free. One preprint per year can be posted for free, with a onetime
@@ -326,11 +315,11 @@ branches, all of which can be effortlessly merged and version controlled.  While
 Git is created primarily for software development, where the use of version
 control systems is standard \cite{aru12}, it is ideal for academic research
 since it provides a way to collaborate on every step of the manuscript
-development process, from data manipulation and analysis to writing and
-revision. For example, during the development of this manuscript, each author
-would clone the project (\emph{i.e.} make a personal copy), modify it, and then
-merge their changes into a master branch. This takes the preprint process to an
-new level, where the entire writing process is open from the beginning.
+development process. For example, during the development of this manuscript,
+each author would clone the project (\emph{i.e.} make a personal copy), modify
+it, and then merge their changes into a master branch. This takes the preprint
+process to an new level, where the entire writing process is open from the
+beginning.
 
 \section*{Conclusion}
 
@@ -380,9 +369,9 @@ PDP is supported by an Alexander Graham Bell scholarship from the National
 Sciences and Engineering Council of Canada. EPW is supported by a CAREER Award
 from the National Science Foundation (DEB-0953694). JJA is supported by NSF
 DEB-0614166 and NSF DEB-0919018.  TP is supported by a FQRNT-MELS post-doctoral
-scholarship. KR is supported by NSF
-DEB-1021553. DG is funded by a Discovery Grand from the National Sciences and
-Engineering Council of Canada and by the Canada Research Chair program.
+scholarship. KR is supported by NSF DEB-1021553. DG is funded by a Discovery
+Grand from the National Sciences and Engineering Council of Canada and by the
+Canada Research Chair program.
 
 \section*{Acknowledgements}
 
@@ -401,15 +390,11 @@ on an earlier version of this manuscript.
 \includegraphics[width=4in]{map.eps}
 \end{center}
 \caption { {\bf It can take several months, and even a few years, before a submitted
-paper is officially published and citable.}  The average time to publication
-varies greatly between journals and can be as low as 104 days (Evolution for
-2011) to 213 (PLOS One in 2010).  Meanwhile, few people are aware of the
+paper is officially published and citable.} Meanwhile, few people are aware of the
 research that has been done since, typically, only close colleagues are given
 access to the preprints. With public preprint servers, the science is
 immediately available and can be openly discussed, analyzed, and integrated into
-current research. It benefits both science and publishers. Both want the papers
-to be well-known and cited, and public preprints make it possible to integrate
-research even before publication, greatly improving immediacy.  }
+current research. }
 \label{fig:map}
 \end{figure}
 
@@ -437,12 +422,9 @@ research even before publication, greatly improving immediacy.  }
     British Ecological Society                  & No answer to our query \\
     \hline
     \end{tabular}
-    \begin{flushleft}
-    Some publishers
-tolerate preprints except for a few of their medical journals, for example the
-\emph{ Journal of the National Cancer Institute} from Oxford and \emph{The
-Lancet} from Elsevier.
-    \end{flushleft}
+    \begin{flushleft} Some publishers tolerate preprints except for a few of
+their medical journals, for example the \emph{ Journal of the National Cancer
+Institute} from Oxford and \emph{The Lancet} from Elsevier.  \end{flushleft}
     \label{table:policies}
 \end{table}
 
