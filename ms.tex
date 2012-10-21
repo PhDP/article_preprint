@@ -1,44 +1,97 @@
-\documentclass[letterpaper,twocolumn,superscriptaddress,showkeys,longbibliography]{revtex4-1}
-\usepackage[utf8]{inputenc}
-\usepackage{color,dcolumn,graphicx,hyperref}
-\hypersetup
-{
-    colorlinks = true, linkcolor = blue, citecolor = blue, urlcolor = blue,
-}
+% Template for PLoS
+% Version 1.0 January 2009
+%
+% To compile to pdf, run:
+% latex ms.tex
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+
+\documentclass[10pt]{article}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+\usepackage{color} 
+
+% Use doublespacing - comment out for single spacing
+\usepackage{setspace}
+\usepackage{hyperref} 
+\doublespacing
+
+% Text layout
+\topmargin 0.0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 16cm 
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+% Use the PLoS provided bibtex style
+\bibliographystyle{plos2009}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+%\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Leave date blank
+\date{}
+
+\pagestyle{myheadings}
+%% ** EDIT HERE **
+
+
+%% ** EDIT HERE **
+%% PLEASE INCLUDE ALL MACROS BELOW
+
+%% END MACROS SECTION
 
 \begin{document}
 
-\title{Developing a preprint culture in biology}
+% Title must be 150 characters or less
+\begin{flushleft}
+{\Large
+\textbf{Developing a preprint culture in biology}
+}
+% Insert Author names, affiliations and corresponding author email.
+\\
+Philippe Desjardins-Proulx$^{1, 2,\ast}$, 
+Ethan P. White$^{3}$, 
+Joel J. Adamson$^{4}$,
+Karthik Ram$^{5}$,
+Timoth\'ee Poisot$^{1,2,6}$,
+Dominique Gravel$^{1,2}$
+\\
+\bf{1} Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Quebec, Canada.
+\\
+\bf{2} Quebec Center for Biodiversity Science, McGill University, Quebec, Canada.
+\\
+\bf{3} Departement of Bology, Utah State University, Utah, United-States of America.
+\\
+\bf{4} Ecology, Evolution and Organismic Biology, University of North Carolina at Chapel Hill, North Carolina, United-States of America
+\\
+\bf{5} Environmental Science, Policy, and Management. University of California, Berkeley, California, United-States of America.
+\\
+\bf{6} International Network for Next-Generation Ecology.
+\\
+$\ast$ E-mail: philippe.d.proulx@gmail.com
+\end{flushleft}
 
-\author{Philippe Desjardins-Proulx}
-\email[E-mail: ]{philippe.d.proulx@gmail.com}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-
-\author{Ethan P. White}
-\affiliation{Departement of Bology, Utah State University, United-States of America.}
-
-\author{Joel J. Adamson}
-\affiliation{Ecology, Evolution and Organismic Biology, University of North 
-Carolina at Chapel Hill, United-States of America}
-
-\author{Karthik Ram}
-\affiliation{Environmental Science, Policy, and Management. University of California, Berkeley, United-States of America.}
-
-\author{Timoth\'ee Poisot}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-\affiliation{International Network for Next-Generation Ecology.}
-
-\author{Dominique Gravel}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-
-\keywords{Publishing; Preprint servers; Green Open Access}
-
-\maketitle
-
-\section{Introduction}
+\section*{Introduction}
 
 Public preprint servers allow authors to make manuscripts publicly available
 before, or in parallel to, submitting them to journals for traditional peer-
@@ -78,7 +131,7 @@ highlight the advantages of open preprint servers for both scientists and
 publishers; 2) discuss the preprint policies of major publishers in biology; and
 3) review the most popular preprint servers currently available.
 
-\section{The case for public preprints}
+\section*{The case for public preprints}
 
 The first and most often discussed advantage of arXiv and open preprints is
 speed (Figure~\ref{fig:map}). The time between submission and the official
@@ -101,7 +154,7 @@ perceived value of pre-prints as close, or equal, to journal articles will allow
 young researchers to put their research outcome in the open, and build a
 reputation for themselves through the diffusion of their work without fear that
 this work will not be recognized by grant or job committees. In this
-perspective, mixed publication systems like F1000Research [\ref{f1000r}] should
+perspective, mixed publication systems like F1000Research should
 be encouraged as they combine the best of both worlds: contributions are
 initially considered preprints, but acquire full article status after positive
 reviews are received.
@@ -127,19 +180,6 @@ With a rich enough community of scientists depositing preprints, and commenting
 on them, the process of an open pre-review can become widespread and will
 overall increase the quality of first submissions \cite{hoc12}.
 
-\begin{figure}[ht!] \centering\includegraphics[width=0.50\textwidth]{map.pdf}
-\caption { It can take several months, and even a few years, before a submitted
-paper is officially published and citable.  The average time to publication
-varies greatly between journals and can be as low as 104 days (Evolution for
-2011) to 213 (PLOS One in 2010).  Meanwhile, few people are aware of the
-research that has been done since, typically, only close colleagues are given
-access to the preprints. With public preprint servers, the science is
-immediately available and can be openly discussed, analyzed, and integrated into
-current research. It benefits both science and publishers. Both want the papers
-to be well-known and cited, and public preprints make it possible to integrate
-research even before publication, greatly improving immediacy.  }
-\label{fig:map} \end{figure}
-
 Finally, public preprint servers offer a fair way to establish intellectual
 priority by making the work available as soon as it is complete. Some
 manuscripts will spend much more time than others in the review process and/or in
@@ -148,7 +188,7 @@ acceptance dates do not accurately characterize who came up with an idea
 first. For this reason, mathematicians and physicists have embraced arXiv in
 part to establish priority in a fair way \cite{gin11,cal12}.
 
-\section{Preprints in biological sciences}
+\section*{Preprints in biological sciences}
 
 In contrast to other disciplines, the field of biology has effectively no
 preprint culture, with the exception of small pockets of primarily highly
@@ -190,40 +230,12 @@ has not developed in biology and the practice is still considered unusual. As an
 example, Wiley-Blackwell, which publishes some of the leading journals in
 biology, has no official policy on the matter.
 
-\begin{table*}
-    \centering
-    \begin{tabular}{|ll|}
-    \hline
-    Publisher                                   & Policy \\
-    \hline
-    Springer                            	& Accept \\
-    BMC                                 	& Accept \\
-    Elsevier                            	& Accept \\
-    Nature Publishing Group             	& Accept \\
-    Public Library of Science           	& Accept \\
-    Genetics Society of America                 & Accept \\
-    Royal Society                       	& Accept \\
-    National Academy of Science (USA)           & Accept \\
-    Ecological Society of America       	& Accept \\
-    Oxford Journals                             & Accept \\
-    Science                             	& Ambiguous \\
-    Wiley-Blackwell                       	& No general policy \\
-    British Ecological Society                  & No answer to our query \\
-    \hline
-    \end{tabular}
-    \caption{Policies for important publishers in biology. Some publishers
-tolerate preprints except for a few of their medical journals, for example the
-\emph{ Journal of the National Cancer Institute} from Oxford and \emph{The
-Lancet} from Elsevier.}
-    \label{table:policies}
-\end{table*}
-
-\section{Current offerings}
+\section*{Current offerings}
 
 We briefly discuss the main options to submit preprints to open servers:
 arXiv.org, figshare, and the upcoming PeerJ and F1000Research.
 
-\subsection{arXiv}
+\subsection*{arXiv}
 
 arXiv (\url{http://arxiv.org/}) is the most widely-used preprint server today,
 and its use is almost universal in some branches of mathematics and physics.
@@ -248,7 +260,7 @@ Simons Foundation \cite{arxiv_future}. This approach to financing is one of the
 numerous measures that arXiv takes to ensure that the repository will remain
 permanently available and submissions will be readable.
 
-\subsection{figshare}
+\subsection*{figshare}
 
 figshare (\href{http://figshare.com}{http://figshare.com}) is an open server
 that allows scientists to submit any research output: manuscript, figures,
@@ -266,7 +278,7 @@ approach to preprints, figshare offers an alternative to arXiv for empirical
 biologists. Furthermore, by allowing all types of content, figshare also
 provides an archive for early results (\emph{e.g.}: figures, lab presentations).
 
-\subsection{PeerJ}
+\subsection*{PeerJ}
 
 PeerJ (\href{https://peerj.com/}{https://peerj.com/}) is a new open access
 publisher that combines both a preprint server and a peer reviewed journal.  It
@@ -287,7 +299,7 @@ unlimited public preprints. The preprint server is not tied to the journal, so
 preprints can be posted regardless of where they will eventually be submitted
 for publication.
 
-\subsection{F1000Research}\label{f1000r}
+\subsection*{F1000Research}\label{f1000r}
 
 F1000Research is not a public preprint server like the previous three servers.
 Whereas arXiv, figshare, and PeerJ offer an option to submit a manuscript
@@ -302,7 +314,7 @@ integrated in \emph{e.g.} figshare widgets, the DOI of which are given in the
 paper when the data are first mentioned.  By integrating data to the paper,
 F1000Research is working to make science more reproducible and open.
 
-\subsection{GitHub}
+\subsection*{GitHub}
 
 This manuscript was developed entirely as an open project on GitHub. GitHub is
 one of several hosting services for collaborative development using the Git
@@ -320,7 +332,7 @@ would clone the project (\emph{i.e.} make a personal copy), modify it, and then
 merge their changes into a master branch. This takes the preprint process to an
 new level, where the entire writing process is open from the beginning.
 
-\section{Conclusion}
+\section*{Conclusion}
 
 The ongoing discussions on the publication process, peer-reviewing and
 alternative publication models are all symptoms of the current uneasiness of
@@ -362,23 +374,76 @@ science: they speed up the dissemination of scientific discoveries, impede
 censorship and put on reader's shoulders the responsibility to judge originality
 and pertinence.
 
-\section{Funding}
+\section*{Funding}
 
 PDP is supported by an Alexander Graham Bell scholarship from the National
 Sciences and Engineering Council of Canada. EPW is supported by a CAREER Award
 from the National Science Foundation (DEB-0953694). JJA is supported by NSF
 DEB-0614166 and NSF DEB-0919018.  TP is supported by a FQRNT-MELS post-doctoral
-scholarship and 25 cents found by a coffee machine.  KR is supported by NSF
+scholarship. KR is supported by NSF
 DEB-1021553. DG is funded by a Discovery Grand from the National Sciences and
 Engineering Council of Canada and by the Canada Research Chair program.
 
-\section{Acknowledgements}
+\section*{Acknowledgements}
 
 We thank Carl Boettiger, Mark Hahnel, and Hedvig Nenz\'en for helpful comments
 on an earlier version of this manuscript.
 
-\newpage
+\section*{References}
+% The bibtex filename
 \bibliography{refs}
 
-\end{document}
+\newpage
+\section*{Figure Legends}
 
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=4in]{map.eps}
+\end{center}
+\caption { {\bf It can take several months, and even a few years, before a submitted
+paper is officially published and citable.}  The average time to publication
+varies greatly between journals and can be as low as 104 days (Evolution for
+2011) to 213 (PLOS One in 2010).  Meanwhile, few people are aware of the
+research that has been done since, typically, only close colleagues are given
+access to the preprints. With public preprint servers, the science is
+immediately available and can be openly discussed, analyzed, and integrated into
+current research. It benefits both science and publishers. Both want the papers
+to be well-known and cited, and public preprints make it possible to integrate
+research even before publication, greatly improving immediacy.  }
+\label{fig:map}
+\end{figure}
+
+\newpage
+\section*{Tables}
+
+\begin{table}[!ht]
+    \caption{\bf{Policies for important publishers in biology.}}
+    \begin{tabular}{|ll|}
+    \hline
+    Publisher                                   & Policy \\
+    \hline
+    Springer                            	& Accept \\
+    BMC                                 	& Accept \\
+    Elsevier                            	& Accept \\
+    Nature Publishing Group             	& Accept \\
+    Public Library of Science           	& Accept \\
+    Genetics Society of America                 & Accept \\
+    Royal Society                       	& Accept \\
+    National Academy of Science (USA)           & Accept \\
+    Ecological Society of America       	& Accept \\
+    Oxford Journals                             & Accept \\
+    Science                             	& Ambiguous \\
+    Wiley-Blackwell                       	& No general policy \\
+    British Ecological Society                  & No answer to our query \\
+    \hline
+    \end{tabular}
+    \begin{flushleft}
+    Some publishers
+tolerate preprints except for a few of their medical journals, for example the
+\emph{ Journal of the National Cancer Institute} from Oxford and \emph{The
+Lancet} from Elsevier.
+    \end{flushleft}
+    \label{table:policies}
+\end{table}
+
+\end{document}
