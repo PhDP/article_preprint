@@ -24,6 +24,7 @@ cleaned_df$shape <- as.factor(ifelse(grepl("Biology", cleaned_df$variable), 2, 1
 pcolor <- rev(c(brewer.pal(9, "YlGnBu")))
 # Changing "Biology" to red so it stands out.
 pcolor[9] <- "#d53d4e"
+
 figure_2 <- ggplot(cleaned_df[complete.cases(cleaned_df),], aes(year, value, group = variable,color = variable)) + geom_line() + geom_line(aes(linetype = shape), size = 1, , show_guide = FALSE) + expand_limits(0,0) + labs(y="Percent of submissions", x="Year") + ggtitle("arXiv submissions by discipline") + guides(colour = guide_legend(title = "Disciplines", title.hjust = 0.5, keywidth = 1)) + scale_color_manual(values = pcolor,  name = "Discipline") + theme_gray()
 
 ggsave(figure_2, file = "figure_2.png", width = 6, height = 4)
