@@ -25,6 +25,6 @@ pcolor <- rev(c(brewer.pal(9, "YlGnBu")))
 # Changing "Biology" to red so it stands out.
 pcolor[9] <- "#d53d4e"
 
-figure_2 <-  ggplot(cleaned_df[complete.cases(cleaned_df),], aes(year, value, group = variable,color = variable)) + geom_line() + geom_line(aes(linetype = shape), size = 1, show_guide = FALSE) + expand_limits(0,0) + labs(y="Percent of submissions", x="Year") + ggtitle("arXiv submissions by discipline") + guides(colour = guide_legend(title = "Disciplines", title.hjust = 0.5, keywidth = 1, keyheight = 1, override.aes = list(size = 4))) + scale_color_manual(values = pcolor,  name = "Discipline") + theme_gray()
+figure_2 <-  ggplot(cleaned_df[complete.cases(cleaned_df),], aes(year, value, group = variable,color = variable)) + geom_line() + geom_line(aes(linetype = shape), size = 1, show_guide = FALSE) + expand_limits(0,0) + labs(y="Cumulative submissions", x="Year") + ggtitle("arXiv submissions by discipline") + guides(colour = guide_legend(title = "Disciplines", title.hjust = 0.5, keywidth = 1, keyheight = 1, override.aes = list(size = 4))) + scale_color_manual(values = pcolor,  name = "Discipline") + theme_gray()
 
 ggsave(figure_2, file = "figure_2.png", width = 6, height = 4)
