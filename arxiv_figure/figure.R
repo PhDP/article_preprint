@@ -19,12 +19,12 @@ cleaned_df <- cleaned_df[cleaned_df$variable!="year.1",]
 cleaned_df$variable <-  factor(cleaned_df$variable, levels = c("Astronomy and Astrophysics", "Condensed Matter", "Mathematics", "High-energy Physics", "Other Physics", "Computer Science", "Statistics", "Finance", "Biology"))
 
 # This makes the biology line dashed
-cleaned_df$shape <- as.factor(ifelse(grepl("Biology", cleaned_df$variable), 2, 1))
+cleaned_df$shape <- as.factor(ifelse(grepl("Biology", cleaned_df$variable), 3, 1))
 # This is the color palette. We can change this. see ?brewer.pal for more options
 pcolor <- rev(c(brewer.pal(9, "YlGnBu")))
 # Changing "Biology" to red so it stands out.
 pcolor[9] <- "#d53d4e"
 
-figure_2 <- ggplot(cleaned_df[complete.cases(cleaned_df),], aes(year, value, group = variable,color = variable)) + geom_line() + geom_line(aes(linetype = shape), size = 1, , show_guide = FALSE) + expand_limits(0,0) + labs(y="Percent of submissions", x="Year") + ggtitle("arXiv submissions by discipline") + guides(colour = guide_legend(title = "Disciplines", title.hjust = 0.5, keywidth = 1)) + scale_color_manual(values = pcolor,  name = "Discipline") + theme_gray()
+figure_2 <-  ggplot(cleaned_df[complete.cases(cleaned_df),], aes(year, value, group = variable,color = variable)) + geom_point(size = 2) + geom_line(aes(linetype = shape), size = 1, show_guide = FALSE) + expand_limits(0,0) + labs(y="Percent of submissions", x="Year") + ggtitle("arXiv submissions by discipline") + guides(colour = guide_legend(title = "Disciplines", title.hjust = 0.5, keywidth = 1, keyheight = 1, override.aes = list(size = 4))) + scale_color_manual(values = pcolor,  name = "Discipline") + theme_gray()
 
 ggsave(figure_2, file = "figure_2.png", width = 6, height = 4)
