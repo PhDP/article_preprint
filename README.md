@@ -3,10 +3,9 @@ Article preprint
 An opinion piece in which we argue that biologists should submit their
 manuscripts to public preprint servers.
 
-The paper will appear in PLOS Biology. The 'plosbiol' branch has the
-modifications made during the peer-review process:
-
-    https://github.com/PhDP/article_preprint/tree/plosbiol
+The paper will appear in PLOS Biology. The [plosbiol
+branch](https://github.com/PhDP/article_preprint/tree/plosbiol) has the
+modifications made during the peer-review process.
 
 Authors
 =======
