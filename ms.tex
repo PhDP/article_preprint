@@ -1,40 +1,25 @@
-\documentclass[letterpaper,twocolumn,superscriptaddress,showkeys,longbibliography]{revtex4-1}
+\documentclass[letterpaper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{color,dcolumn,graphicx,hyperref}
-\hypersetup
-{
-    colorlinks = true, linkcolor = blue, citecolor = blue, urlcolor = blue,
-}
-
+\usepackage{color,graphicx,hyperref,authblk}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\renewcommand\Affilfont{\itshape\small}
 \begin{document}
 
-\title{Developing a preprint culture in biology}
+\title{The case for open preprints in biology}
 
-\author{Philippe Desjardins-Proulx}
-\email[E-mail: ]{philippe.d.proulx@gmail.com}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-
-\author{Ethan P. White}
-\affiliation{Departement of Biology, Utah State University, United-States of America.}
-
-\author{Joel J. Adamson}
-\affiliation{Ecology, Evolution and Organismic Biology, University of North 
-Carolina at Chapel Hill, United-States of America}
-
-\author{Karthik Ram}
-\affiliation{Environmental Science, Policy, and Management. University of California, Berkeley, United-States of America.}
-
-\author{Timoth\'ee Poisot}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-\affiliation{International Network for Next-Generation Ecology.}
-
-\author{Dominique Gravel}
-\affiliation{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
-\affiliation{Quebec Center for Biodiversity Science, McGill University, Canada.}
-
-\keywords{Publishing; Preprint servers; Green Open Access.}
+\author[1,2,3]{Philippe Desjardins-Proulx}
+\author[4]{Ethan P. White}
+\author[5]{Joel J. Adamson}
+\author[6]{Karthik Ram}
+\author[2,3,7]{Timoth\'ee Poisot}
+\author[2,3]{Dominique Gravel}
+\affil[1]{email: \href{philippe.d.proulx@gmail.com}{philippe.d.proulx@gmail.com}}
+\affil[2]{Quebec Center for Biodiversity Science, McGill University, Montr\'eal, Canada.}
+\affil[3]{Theoretical Ecosystem Ecology laboratory, Universit\'e du Qu\'ebec \`a Rimouski, Canada.}
+\affil[4]{Departement of Biology, Utah State University, United-States of America.}
+\affil[5]{Ecology, Evolution and Organismic Biology, University of North Carolina at Chapel Hill, United-States of America}
+\affil[6]{Environmental Science, Policy, and Management. University of California, Berkeley, United-States of America.}
+\affil[7]{International Network for Next-Generation Ecology.}
 
 \maketitle
 
@@ -53,8 +38,8 @@ community; and 4) a fair and straightforward way to establish precedence.
 
 Open preprint servers offer a great opportunity for open science, especially if
 the community embraces the idea of discussing preprints. Initiatives like
-Haldane's Sieve (\href{http://haldanessieve.org/}{http://haldanessieve.org/}) \cite{coo12}, a
-new blog discussing arXiv papers in population genetics, will help make arXiv
+Haldane's Sieve (\href{http://haldanessieve.org/}{http://haldanessieve.org/}), a
+new blog discussing arXiv papers in population genetics, can help make arXiv
 attractive for scientists looking to promote their work \cite{lom12}. These
 initiatives are important to fully exploit the potential of open preprint
 servers. Posting preprints online increases the community of available informal
@@ -67,21 +52,29 @@ Preprints are also integral to the culture of other scientific fields.  Paul
 Krugman noted that, in economics, the \emph{traditional model of submit, get
 refereed, publish, and then people will read your work broke down a long time
 ago. In fact, it had more or less fallen apart by the early 80s} \cite{kru12}.
-In addition to a section in arXiv, economists have the RePEc (Research Papers in
+In addition to a section on arXiv, economists have the RePEc (Research Papers in
 Economics) initiative, which aims to create an archive of working papers,
 manuscripts, and book chapters.
 
 Despite the success of this approach in other fields, most manuscripts in
 biology are not posted to preprint servers and are therefore not seen by more
-than a handful of other scientists prior to publication. In this article, we: 1)
+than a handful of other scientists prior to publication. In this article, we
 highlight the advantages of open preprint servers for both scientists and
-publishers; 2) discuss the preprint policies of major publishers in biology; and
-3) review the most popular preprint servers currently available.
+publishers, discuss the preprint policies of major publishers in biology, and
+describe the main options to publish preprints (Table \ref{table:options}).
 
 \section{The case for public preprints}
 
-The first and most often discussed advantage of arXiv and open preprints is
-speed (Figure~\ref{fig:map}). The time between submission and the official
+\begin{figure}[ht!] \centering\includegraphics[width=0.90\textwidth]
+{map.pdf} \caption {It can take several months before a submitted paper is
+officially published and citable. Meanwhile, few people are aware of the
+research that has been done since, typically, only close colleagues are
+given access to the preprints. With public preprint servers, the science is
+immediately available and can be openly discussed, analyzed, and integrated
+into current research.} \label{fig:map} \end{figure}
+
+The first and most often discussed advantage of open preprints is
+speed (Figure \ref{fig:map}). The time between submission and the official
 publication of a manuscript can be measured in months, sometimes in years. For
 all this time, the research is known only to a select few: colleagues, editors,
 reviewers. Thus, the science cannot be used, discussed, or reviewed by the wider
@@ -100,45 +93,29 @@ publication record when applying for a scholarship or a position. Increasing the
 perceived value of pre-prints as close, or equal, to journal articles will allow
 young researchers to put their research outcome in the open, and build a
 reputation for themselves through the diffusion of their work without fear that
-this work will not be recognized by grant or job committees. In this
-perspective, mixed publication systems like F1000Research [\ref{f1000r}] should
-be encouraged as they combine the best of both worlds: contributions are
-initially considered preprints, but acquire full article status after positive
-reviews are received.
+this work will not be recognized by grant or job committees.
 
-Posting manuscripts as preprints also has the potential to result in higher
-quality science by allowing prepublication feedback from a large pool of
-reviewers. Prepublication reviews by a small network of colleagues are common in
-the biological sciences and form an important part of the scientific process.
-These ``friendly'' reviews increases the chances of errors being caught prior to
-publication. Furthermore, the formal peer-review process as a whole is
-critically over-loaded. As the number of active scientists increases and the
-pressure to publish increases, it is becoming difficult for journals
-to find reviewers \cite{hoc09}.  At the same time, rejection rates are high in
-most journals \cite{aar08,roh09}, and when not invited to submit a revision,
-authors must start the process over again at another journal. As a result,
-initiatives to reduce time from submission to publication have emerged across
-the scientific community. Rohr et al.  \cite{roh09} called for the recycling and
-reuse of peer-reviews: by attaching previous reviews and detailed replies to a
-new submission, both the editor and the referees can gauge the work done on the
-manuscript, and perhaps evaluate it with less prejudice. A widespread use of
-preprint servers can achieve the same goal of reducing the time spent in review.
-With a rich enough community of scientists depositing preprints, and commenting
-on them, the process of an open pre-review can become widespread and will
+Posting manuscripts as preprints also has the potential to improve the 
+quality of science by allowing prepublication feedback from a large pool of 
+reviewers. In our experience, prepublication reviews by a small network of 
+colleagues are common in the biological sciences and form an important part 
+of the scientific process. These ``friendly'' reviews increase the chance 
+of errors being caught prior to publication. Furthermore, the formal 
+peer-review process as a whole is critically over-loaded. As the number of 
+active scientists increases and the pressure to publish increases, it is 
+becoming difficult for journals to find reviewers \cite{hoc09}.  At the same 
+time, rejection rates are high in most journals \cite{aar08,roh09}, and when 
+not invited to submit a revision, authors must start the process over again 
+at another journal. As a result, initiatives to reduce time from submission 
+to publication have emerged across the scientific community. Rohr et al.  
+\cite{roh09} called for the recycling and reuse of peer-reviews: by 
+attaching previous reviews and detailed replies to a new submission, both 
+the editor and the referees can gauge the work done on the manuscript, and 
+perhaps evaluate it with less prejudice. A widespread use of preprint 
+servers can achieve the same goal of reducing the time spent in review. With 
+a rich enough community of scientists depositing preprints, and commenting 
+on them, the process of an open pre-review can become widespread and will 
 overall increase the quality of first submissions \cite{hoc12}.
-
-\begin{figure}[ht!] \centering\includegraphics[width=0.50\textwidth]{map.pdf}
-\caption { It can take several months, and even a few years, before a submitted
-paper is officially published and citable.  The average time to publication
-varies greatly between journals and can be as low as 104 days (Evolution for
-2011) to 213 (PLOS One in 2010).  Meanwhile, few people are aware of the
-research that has been done since, typically, only close colleagues are given
-access to the preprints. With public preprint servers, the science is
-immediately available and can be openly discussed, analyzed, and integrated into
-current research. It benefits both science and publishers. Both want the papers
-to be well-known and cited, and public preprints make it possible to integrate
-research even before publication, greatly improving immediacy.  }
-\label{fig:map} \end{figure}
 
 Finally, public preprint servers offer a fair way to establish intellectual
 priority by making the work available as soon as it is complete. Some
@@ -150,217 +127,194 @@ part to establish priority in a fair way \cite{gin11,cal12}.
 
 \section{Preprints in biological sciences}
 
+\begin{figure}[ht!] \centering\includegraphics[width=0.90\textwidth]
+{arxiv.pdf} \caption {Submissions to the quantitative biology section lag behind
+physics, mathematics, and computer science.} \label{fig:arxiv} \end{figure}
+
 In contrast to other disciplines, the field of biology has effectively no
 preprint culture, with the exception of small pockets of primarily highly
-quantitative research (\emph{e.g.}, epidemiology, population genetics).
-Submitting to preprint servers has become more common in the past few years,
-and the quantitative biology section in arXiv is experiencing the fastest
-growth in submissions \cite{cal12}. Yet, the number of biology papers
-submitted to preprint servers still represents only a small fraction of the
-total research produced in biology.
+quantitative research (\emph{e.g.}, epidemiology, population genetics).  While
+submitting to preprint servers has become more common in the past few years, the
+number of biology papers submitted to preprint servers still represents only a
+small fraction of the total research produced in biology (Figure \ref{fig:arxiv}).
 
-There are a number of reasons why biologists did not develop the reflex of
+There are a number of reasons why biologists have not developed a culture of
 sharing preprints, many of which are based on common misconceptions. For
 example, in contrast to other fields there is a perception in biology that
-public preprints make it easier to steal ideas \cite{gin11}. However, there is
-no evidence of this happening in the numerous other fields that have adopted
-preprint servers, and since preprint servers create a clear record of who had
-the idea first, and when, this appears to be a largely unfounded concern. In
-other fields preprints serve the opposite role, they allow straightforward
-establishment of precedence, letting research lay claim to an idea thus
-preventing it from being ``stolen'' \cite{gin11}
+public preprints make it easier to steal ideas \cite{gin11}. In other fields
+preprints serve the opposite role, they allow straightforward establishment
+of precedence, letting research lay claim to an idea thus preventing it from
+being ``stolen'' \cite{gin11}. Another major concern is based on a certain
+interpretation of the Ingelfinger rule: scientists should not publish the
+same manuscript twice \cite{alt96}. A preprint is simply a document that
+allows ideas to spread and be discussed, it is not yet formally validated by
+the peer-review system. This is why almost all the major publishers in
+biology are preprint-friendly, including: Nature Publishing Group, PLOS,
+BMC, PNAS, Elsevier, and Springer (Table 1). This year, both the Ecological
+Society of America and the Genetics Society of America changed their
+policies to allow public preprints. \emph{Nature} even felt compelled to
+respond to the rumour that they refused manuscripts submitted to arXiv by
+saying that ``\emph{Nature} never wishes to stand in the way of
+communication between researchers. We seek rather to add value for authors
+and the community at large in our peer review, selection and editing'' \cite
+{nat05}. Still, a few journals adopt a ``by default'' hostile attitude
+towards preprints, mostly due to the lack of clear policy of the publishers.
+As an example, Wiley-Blackwell, which publishes some of the leading journals
+in biology, has no official policy on the matter.
 
-Another major concern is based on a certain interpretation of the Ingelfinger
-rule: scientists should not publish the same manuscript twice \cite{alt96}. A
-preprint is simply a document that allows ideas to spread and be discussed, it
-is not yet formally validated by the peer-review system. This is why the
-majority of publishers do not see arXiv and similar services as a violation of
-the Ingelfinger rule. Almost all of the major publishers in biology are
-preprint-friendly, including: Nature Publishing Group, PLOS, BMC, PNAS,
-Elsevier, and Springer \ref{table:policies}. This year, both the Ecological
-Society of America and the Genetics Society of America changed their policies to
-allow public preprints. \emph{Nature} even felt compelled to respond to the
-rumour that they refused manuscripts submitted to arXiv by saying that
-``\emph{Nature} never wishes to stand in the way of communication between
-researchers. We seek rather to add value for authors and the community at large
-in our peer review, selection and editing'' \cite{nat05}.  Still, a few journals
-adopt a ``by default'' hostile attitude towards preprints, mostly due to the
-lack of clear policy of the publishers, or perhaps because a preprint culture
-has not developed in biology and the practice is still considered unusual. As an
-example, Wiley-Blackwell, which publishes some of the leading journals in
-biology, has no official policy on the matter.
+\begin{table}[!ht]
+  \caption{\bf{Policies for important publishers in biology.}}
+  \begin{tabular}{|ll|}
+  \hline
+  Publisher                             & Policy \\
+  \hline
+  Springer                              & Accept \\
+  BMC                                   & Accept \\
+  Elsevier                              & Accept \\
+  Nature Publishing Group               & Accept \\
+  Public Library of Science             & Accept \\
+  Genetics Society of America           & Accept \\
+  Royal Society                         & Accept \\
+  National Academy of Science (USA)     & Accept \\
+  Ecological Society of America         & Accept \\
+  Oxford Journals                       & Accept \\
+  Science                               & Ambiguous \\
+  Wiley-Blackwell                       & No general policy \\
+  British Ecological Society            & No answer to our query \\
+  \hline
+  \end{tabular}
+  \caption{Some publishers tolerate preprints except for a few of their medical
+journals, for example the \emph{ Journal of the National Cancer Institute}
+from Oxford and \emph{The Lancet} from Elsevier.}
+  \label{table:policies}
+\end{table}
 
-\begin{table*}
-    \centering
-    \begin{tabular}{|ll|}
-    \hline
-    Publisher                                   & Policy \\
-    \hline
-    Springer                            	& Accept \\
-    BMC                                 	& Accept \\
-    Elsevier                            	& Accept \\
-    Nature Publishing Group             	& Accept \\
-    Public Library of Science           	& Accept \\
-    Genetics Society of America                 & Accept \\
-    Royal Society                       	& Accept \\
-    National Academy of Science (USA)           & Accept \\
-    Ecological Society of America       	& Accept \\
-    Oxford Journals                             & Accept \\
-    Science                             	& Ambiguous \\
-    Wiley-Blackwell                       	& No general policy \\
-    British Ecological Society                  & No answer to our query \\
-    \hline
-    \end{tabular}
-    \caption{Policies for important publishers in biology. Some publishers
-tolerate preprints except for a few of their medical journals, for example the
-\emph{ Journal of the National Cancer Institute} from Oxford and \emph{The
-Lancet} from Elsevier.}
-    \label{table:policies}
-\end{table*}
+\section{Preprint Server Roundup}
 
-\section{Current offerings}
-
-We briefly discuss the main options to submit preprints to open servers:
-arXiv.org, figshare, and the upcoming PeerJ and F1000Research.
+\begin{table}[!ht]
+  \caption{\bf{Popular options for preprints}}
+  \begin{tabular}{|l|ccccccc|}
+  \hline
+  Website               & Free & Comments & Private & P.-R. & DOI & V.C. & O.C.\\
+  \hline
+  arXiv.org             & Yes & No & No & No & No & No & No\\
+  figshare.com          & Yes & Yes & No & No & Yes & No & Yes\\
+  peerj.com             & 1/yr & Yes & Yes & No & Yes & No & No\\
+  f1000research.com     & No & Yes & No & Yes & Yes & No & No\\
+  github.com            & Yes & Yes & Yes & No & No & Yes & Yes\\
+  \hline
+  \end{tabular}
+  \caption{
+    \textbf{Free:} Can preprints be submitted for free.
+    \textbf{Comments:} Support for online comments.
+    \textbf{Private:} Support for private preprints.
+    \textbf{P.-R.:} Whether the preprints are peer-reviewed on the server.
+    \textbf{DOI:} Each item is assigned a unique digital object identifier.
+    \textbf{V.C.:} Is the preprint stored using a version-control system with the complete history of modifications?
+    \textbf{O.C.:} Can upload figures, videos, datasets, code.
+  }
+  \label{table:options}
+\end{table}
 
 \subsection{arXiv}
 
 arXiv (\url{http://arxiv.org/}) is the most widely-used preprint server today,
 and its use is almost universal in some branches of mathematics and physics.
-arXiv provides a reliable citation system for all eprints and is especially
-popular in high-energy physics. Physicist Paul Ginsparg created arXiv in 1991
-for theoretical high-energy physicists to communicate preprints via email and
-ftp, and soon thereafter adopted the newly created world-wide web
-\cite{jackson2002preprints}.  arXiv now receives over 7 000 submissions per
-month (\url{http://arxiv.org/show_monthly_submissions}) and divides its
-submissions into subcategories of physics, mathematics, computer science,
-quantitative biology, finance and statistics.  The quantitative biology category
-includes subcategories for Populations and Evolution, Quantitative Methods and
-other categories that may be of interest to biologists.
-
-One aspect of arXiv that differs from other options is that it has a moderation
-system, which requires that papers must be categorized by an endorser.  At least
-one author of a paper must be an endorser that has previously submitted a paper
-or has received permission to submit to a particular category. arXiv is now
-administered by the Cornell University Libraries, with funding coming from
-voluntary pledges by academic institutions along with matching funds from the
-Simons Foundation \cite{arxiv_future}. This approach to financing is one of the
-numerous measures that arXiv takes to ensure that the repository will remain
-permanently available and submissions will be readable.
+arXiv has a system of moderators and endorsers. At least one author of a paper
+must be an endorser that has either previously submitted a paper or has received
+permission to submit.  Moderators have the power to change the classification of
+a manuscript.
 
 \subsection{figshare}
 
 figshare (\href{http://figshare.com}{http://figshare.com}) is an open server
-that allows scientists to submit any research output: manuscript, figures,
+allowing scientists to submit any research output: manuscript, figures,
 datasets, videos, theses, presentations, and so on. There are no rules to limit
 what constitutes a research output and, unlike arXiv, there is no endorser
-system. All figshare content has a unique digital object identifier (DOI) like
-any journal article, thus offering a permanent and stable link to the content.
-A flexible tag system is used to classify each item. Comments can be made on all
-content allowing for centralized discussion related to the material.
-
-One of the advantages of figshare over arXiv for biologists is that is it not
-limited to quantitative sciences. arXiv.org has sections on quantitative biology
-but might not be appropriate for non-quantitative work. With its flexible
-approach to preprints, figshare offers an alternative to arXiv for empirical
-biologists. Furthermore, by allowing all types of content, figshare also
-provides an archive for early results (\emph{e.g.}: figures, lab presentations).
+system. A flexible tag system is used to classify each item.
 
 \subsection{PeerJ}
 
-PeerJ (\href{https://peerj.com/}{https://peerj.com/}) is a new open access
-publisher that combines both a preprint server and a peer reviewed journal.  It
-is focused on the biological and medical sciences, which may help overcome the
-perception that preprints do not have a place in biology. Like figshare this is
-an advantage relative to arXiv for biologists doing non-quantitative work.  Also
-like figshare, PeerJ allows commenting on posted preprints, improving the
-potential for pre-publication dialog. In addition, preprints can be made private
-if the authors choose, and shared only with selected colleagues. While this
-reduces many of the benefits of preprints described above, it may allow some
-researchers who would not otherwise post preprints to begin exploring the
-possibility in a manner appropriate to their current circumstances.
-
-In contrast to other preprint servers, users cannot post unlimited public
-preprints for free. One preprint per year can be posted for free, with a onetime
-(\emph{i.e.} lifetime) fee of 99 dollars required to allow an author to post
-unlimited public preprints. The preprint server is not tied to the journal, so
-preprints can be posted regardless of where they will eventually be submitted
-for publication.
+PeerJ (\href{https://peerj.com/}{https://peerj.com/}) is a new commercial open
+access publisher focused on the biological sciences that provides a preprint
+server and a peer reviewed journal. Preprints can optionally be made private.
+One preprint per year can be posted for free, with a onetime (\emph{i.e.}
+lifetime) fee for unlimited public preprints. Preprints can be posted to PeerJ
+regardless of where they will be submitted for publication.
 
 \subsection{F1000Research}\label{f1000r}
 
-F1000Research is not a public preprint server like the previous three servers.
 Whereas arXiv, figshare, and PeerJ offer an option to submit a manuscript
 without having it reviewed, papers submitted to F1000Research will eventually be
 reviewed. Thus, F1000Research offers a hybrid model with publicly available
 manuscripts at time of submission and standard peer-reviews that occur as part
 of the submission process. Manuscripts are considered ``accepted'' and will only
-be indexed after two positive referee responses. F1000Research works closely
-with data providers to integrate raw data to the paper. For instance, upon
-submitting a paper, authors are asked to upload their data, which are then
-integrated in \emph{e.g.} figshare widgets, the DOI of which are given in the
-paper when the data are first mentioned.  By integrating data to the paper,
-F1000Research is working to make science more reproducible and open.
+be indexed after two positive referee responses.
 
 \subsection{GitHub}
 
 This manuscript was developed entirely as an open project on GitHub. GitHub is
 one of several hosting services for collaborative development using the Git
-version control system (VCS).  Git is a decentralized revision control system
-created by Linus Torvalds and is used primarily to develop software, including
-the Linux kernel. Git provides powerful features that allow numerous
-contributers to work asynchronously on the same project, often in parallel
-branches, all of which can be effortlessly merged and version controlled.  While
-Git is created primarily for software development, where the use of version
-control systems is standard \cite{aru12}, it is ideal for academic research
-since it provides a way to collaborate on every step of the manuscript
-development process, from data manipulation and analysis to writing and
-revision. For example, during the development of this manuscript, each author
-would clone the project (\emph{i.e.} make a personal copy), modify it, and then
-merge their changes into a master branch. This takes the preprint process to an
-new level, where the entire writing process is open from the beginning.
+version control system (VCS). It allows numerous contributers to work
+asynchronously on the same project, often in parallel branches, all of which can
+be effortlessly merged and version controlled.  Git is primarily used for
+software development \cite{aru12} but it provides a powerful tool way to
+collaborate on every step of the manuscript development process \cite{ram13}.
+
+\subsection{Other options}
+
+Scientific publishing is more diversified than ever. There are now many 
+alternative options to submit articles before formal publications. For 
+example, social networks such as ResearchGate can be used to submit 
+preprints \cite{lin12}. Also, if GitHub pushes openness further by opening 
+the writing process, open notebooks go even further by opening the entire 
+scientific process \cite{san11}. 
 
 \section{Conclusion}
 
-The ongoing discussions on the publication process, peer-reviewing and
-alternative publication models are all symptoms of the current uneasiness of
-scientists with the ever growing obsession with bibliographic metrics such as
-the impact factor \cite{Fisher2012}. There is pressure on researchers to orient
-their publication strategy in order to maximize their number of publications and
-total citations. A well-known consequence is to submit manuscripts first to the
-most prestigious journals, and then resubmit to ``lower level'' journals as they
-are rejected. The numerous negative impacts of such behavior have been discussed
-in depth \cite{hoc09} and include a long delay between the time a manuscript is
-finished to its publication.  They all contribute in a general slowing down of
-scientific progress.  Research activities and the publication process are
-drifting away from their fundamental object, namely the diffusion of novel
-scientific discoveries. 
+The ongoing discussions on the publication process, peer-reviewing and 
+alternative publication models are all symptoms of the current uneasiness 
+with the ever growing obsession with bibliographic metrics such as the 
+impact factor \cite{Fisher2012}. Researchers are pressured to orient their 
+publication strategy to maximize their number of publications and total 
+citations. A well-known consequence is to submit manuscripts first to the 
+most prestigious journals, and then resubmit to ``lower level'' journals as 
+they are rejected. The numerous negative impacts of such behavior have been 
+discussed in depth \cite{hoc09} and include a long delay between the time a 
+manuscript is finished to its publication. Research activities and the 
+publication process are drifting away from their fundamental object, namely 
+the diffusion of novel scientific discoveries. 
 
-Developing a preprint culture in biology will not solve all problems with the
-current publication process. However, it might significantly reduce its negative
-consequences. The role of peer-reviewing is to judge the scientific quality of a
-study. It is the first barrier against the fraudulent and poor quality science
-susceptible to impede scientific progress. In practice, the peer-review system
-is not only used to evaluate scientific quality but also to judge pertinence. On
-the other hand, preprints are not filtered, neither for their quality nor their
-pertinence. Widespread adoption of preprint servers has the potential to shift
-the diffusion strategy: journals would remain important to validate
-publications, but the relevance of a study, its contribution to science, should
-only be judged by many more readers than the typical two-four anonymous
-reviewers. With a shift in the diffusion strategy, the role of traditional
-journals and their editors would be to showcase scientific discoveries for
-specialized readership. 
+Developing a preprint culture in biology will not solve all problems with 
+the current publication process. However, it might significantly reduce its 
+negative consequences. The role of peer-reviewing is to judge the scientific 
+quality of a study. It is the first barrier against the fraudulent and poor 
+quality science susceptible to impede scientific progress. In practice, the 
+peer-review system is not only used to evaluate scientific quality but also 
+to judge pertinence. On the other hand, preprints are not filtered, neither 
+for their quality nor their pertinence. Widespread adoption of preprint 
+servers has the potential to shift the diffusion strategy: journals would 
+remain important to validate publications, but the relevance of a study 
+should only be judged by many more readers than the typical two-four 
+anonymous reviewers. With a shift in the diffusion strategy, the role of 
+traditional journals and their editors would be to showcase scientific 
+discoveries for specialized readership. 
 
-One of drawback of making publication easier is the proliferation of studies of
-uneven quality. A trade-off between the intensity of the peer-review filtering
-and the benefits to science has been hypothesized \cite{Aarssen2012}.  With
-increasingly stringent peer reviewing, the quality of published papers and
-easiness of finding discoveries might increase, at the cost of censorship, an
-increased load on authors and reviewers, and greater delays for publication.
-Preprints are simply bypassing this model for what we believe is the progress of
-science: they speed up the dissemination of scientific discoveries, impede
-censorship and put on reader's shoulders the responsibility to judge originality
-and pertinence.
+Making publication easier can lead to the proliferation of studies of uneven 
+quality. A trade-off between the intensity of the peer-review filtering and 
+the benefits to science has been hypothesized \cite{Aarssen2012}.  With 
+increasingly stringent peer reviewing, the quality of published papers can 
+improve at the cost of an increased load on authors and 
+reviewers and greater delays for publication.  Preprints are simply 
+bypassing this model for what we believe is the progress of science: they 
+speed up the dissemination of scientific discoveries and put on reader's 
+shoulders the responsibility to judge originality and pertinence.
+
+\section{Acknowledgements}
+
+We dedicate this article to Aaron H. Swartz (1986-2013).  We thank Carl
+Boettiger, Mark Hahnel, and Hedvig Nenz\'en for helpful comments on an earlier
+version of this manuscript.
 
 \section{Funding}
 
@@ -372,13 +326,7 @@ scholarship and 25 cents found by a coffee machine.  KR is supported by NSF
 DEB-1021553. DG is funded by a Discovery Grant from the National Sciences and
 Engineering Council of Canada and by the Canada Research Chair program.
 
-\section{Acknowledgements}
-
-We thank Carl Boettiger, Mark Hahnel, and Hedvig Nenz\'en for helpful comments
-on an earlier version of this manuscript.
-
-\newpage
 \bibliography{refs}
+\bibliographystyle{plain}
 
 \end{document}
-
