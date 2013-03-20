@@ -1,0 +1,23 @@
+Dear Dr. Gross,
+
+  I have consulted my coauthors for a last check on the article and we made a few
+small changes to the text:
+
+ - We added "Open" in the title to avoid confusion.
+ - The section "Current offerings" was renamed "Preprint server roundup". This
+section is now intended to be a box with a table at the beginning and a very
+short text for each of the main server.
+ - We removed the word "censorship" in the discussion. It was considered too
+strong by a few of us.
+ - We fixed a few typos.
+
+The text is written with PLOS' LaTeX template and you did not give any
+instruction on formatting LaTeX files so I assumed I had no further formatting
+to do.
+
+Best regards,
+On behalf of the authors,
+
+Philippe Desjardins-Proulx
+Theoretical Ecosystem Ecology laboratory, Université du Québec, Canada.
+
