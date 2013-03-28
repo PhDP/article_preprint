@@ -3,6 +3,8 @@ Article preprint
 An opinion piece in which we argue that biologists should submit their
 manuscripts to public preprint servers.
 
+[Compiled PDF here.](https://github.com/PhDP/article_preprint/blob/master/ms.pdf?raw=true)
+
 The paper will appear in PLOS Biology.
 
 Authors
