@@ -16,7 +16,7 @@ Authors
 * Philippe Desjardins-Proulx ([phdp](https://github.com/PhDP/))
 * Ethan White ([ethanwhite](https://github.com/ethanwhite/))
 * Joel James Adamson ([adamsonj](https://github.com/adamsonj/))
-* Karthik Ram ([karthikram](https://github.com/karthikram/))
+* Karthik Ram ([karthik](https://github.com/karthik/))
 * Timothée Poisot ([tpoisot](https://github.com/tpoisot/))
 * Dominique Gravel ([dominiquegravel](https://github.com/dominiquegravel/))
 
